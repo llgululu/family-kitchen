@@ -1,0 +1,3 @@
+-- AddIndex (placeholder, FK columns already exist with indexes from Prisma)
+-- Prisma requires this migration to register the new relations on the User side.
+-- No schema changes needed at the SQL level since the FK columns already exist.

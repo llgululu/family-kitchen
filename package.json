@@ -1,0 +1,48 @@
+{
+  "name": "family-kitchen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "情侣厨房：让情侣在家点菜、做菜、记录甜蜜的微信小程序（monorepo）",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "pnpm -r --parallel run lint",
+    "lint:fix": "pnpm -r --parallel run lint:fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,vue,json,md,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,vue,json,md,yml,yaml}\"",
+    "test": "pnpm -r --parallel run test",
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r --parallel run typecheck",
+    "dev:backend": "pnpm --filter @family-kitchen/backend run dev",
+    "dev:admin": "pnpm --filter @family-kitchen/admin run dev",
+    "dev:mini-app": "pnpm --filter @family-kitchen/mini-app run dev",
+    "dev:h5": "pnpm --filter @family-kitchen/mini-app run dev:h5",
+    "build:h5": "pnpm --filter @family-kitchen/mini-app run build:h5",
+    "test:backend": "pnpm --filter @family-kitchen/backend run test",
+    "db:generate": "pnpm --filter @family-kitchen/backend run db:generate",
+    "db:migrate": "pnpm --filter @family-kitchen/backend run db:migrate",
+    "gen:api-types": "pnpm --filter @family-kitchen/shared run gen:types"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@types/node": "^20.16.10",
+    "eslint": "^9.12.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,vue}": [
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  }
+}

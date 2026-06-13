@@ -1,0 +1,77 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build artifacts
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/settings.json.example
+!.vscode/extensions.json
+.cursor/
+*.swp
+*.swo
+
+# Claude Code
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+*.lcov
+
+# NestJS
+backend/dist/
+backend/.nest/
+
+# Prisma
+backend/prisma/migrations/dev.db
+backend/prisma/*.db
+backend/prisma/*.db-journal
+
+# Vite
+admin/dist/
+admin/.vite/
+mini-app/dist/
+mini-app/.vite/
+mini-app/unpackage/
+
+# uni-app
+mini-app/unpackage/dist/
+
+# Lockfiles backup（保留主 lockfile）
+*.lock.bak
+
+# Local generated
+packages/shared/src/api-types.generated.ts
+packages/shared/openapi.json
+
+# MinIO local data
+.minio/
+
+# Misc
+*.tmp
+.cache/

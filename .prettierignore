@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+out
+coverage
+*.min.js
+*.min.css
+pnpm-lock.yaml
+mini-app/unpackage
+backend/prisma/migrations
+packages/shared/src/api-types.generated.ts

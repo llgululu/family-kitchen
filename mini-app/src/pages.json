@@ -1,0 +1,153 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/tabbar/home/home",
+      "style": { "navigationStyle": "custom", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages/tabbar/menu/menu",
+      "style": { "navigationBarTitleText": "菜单", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages/tabbar/timeline/timeline",
+      "style": { "navigationBarTitleText": "时间线", "enablePullDownRefresh": true }
+    },
+    {
+      "path": "pages/tabbar/profile/profile",
+      "style": { "navigationBarTitleText": "我的" }
+    },
+    {
+      "path": "pages/auth/login",
+      "style": { "navigationBarTitleText": "登录", "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/auth/agreement-user",
+      "style": { "navigationBarTitleText": "用户协议" }
+    },
+    {
+      "path": "pages/auth/agreement-privacy",
+      "style": { "navigationBarTitleText": "隐私政策" }
+    },
+    {
+      "path": "pages/family/setup",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/family/settings",
+      "style": { "navigationBarTitleText": "家庭空间设置" }
+    },
+    {
+      "path": "pages/order/create",
+      "style": { "navigationBarTitleText": "点菜" }
+    },
+    {
+      "path": "pages/order/detail",
+      "style": { "navigationBarTitleText": "订单详情" }
+    },
+    {
+      "path": "pages/order/history",
+      "style": { "navigationBarTitleText": "历史订单" }
+    },
+    {
+      "path": "pages/order/chat",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/chat/list",
+      "style": { "navigationBarTitleText": "消息" }
+    },
+    {
+      "path": "pages/recipe/detail",
+      "style": { "navigationBarTitleText": "菜谱详情" }
+    },
+    {
+      "path": "pages/recipe/edit",
+      "style": { "navigationBarTitleText": "新建菜谱" }
+    },
+    {
+      "path": "pages/timeline/monthly",
+      "style": { "navigationBarTitleText": "月度回顾" }
+    },
+    {
+      "path": "pages/timeline/manual",
+      "style": { "navigationBarTitleText": "手动补记" }
+    },
+    {
+      "path": "pages/profile/love-points",
+      "style": { "navigationBarTitleText": "爱心币" }
+    },
+    {
+      "path": "pages/profile/achievements",
+      "style": { "navigationBarTitleText": "成就墙" }
+    },
+    {
+      "path": "pages/profile/edit",
+      "style": { "navigationBarTitleText": "编辑资料" }
+    },
+    {
+      "path": "pages/profile/bind-credentials",
+      "style": { "navigationBarTitleText": "网页版登录" }
+    },
+    {
+      "path": "pages/profile/feedback",
+      "style": { "navigationBarTitleText": "意见反馈" }
+    },
+    {
+      "path": "pages/profile/about",
+      "style": { "navigationBarTitleText": "关于" }
+    },
+    {
+      "path": "pages/profile/chef-level",
+      "style": { "navigationBarTitleText": "厨师等级" }
+    },
+    {
+      "path": "pages/onboarding/index",
+      "style": { "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/notification/list",
+      "style": { "navigationBarTitleText": "通知" }
+    },
+    {
+      "path": "pages/ai/recipe-gen",
+      "style": { "navigationBarTitleText": "AI 菜谱生成" }
+    },
+    {
+      "path": "pages/ai/recommend",
+      "style": { "navigationBarTitleText": "AI 智能推荐" }
+    },
+    {
+      "path": "pages/ai/nutrition",
+      "style": { "navigationBarTitleText": "AI 营养分析" }
+    },
+    {
+      "path": "pages/ai/weekly-plan",
+      "style": { "navigationBarTitleText": "AI 一周菜单" }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "情侣厨房",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#FAF8F6"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#8E8580",
+    "selectedColor": "#E07A5F",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      { "pagePath": "pages/tabbar/home/home", "text": "小厨房" },
+      { "pagePath": "pages/tabbar/menu/menu", "text": "菜单" },
+      { "pagePath": "pages/tabbar/timeline/timeline", "text": "时间线" },
+      { "pagePath": "pages/tabbar/profile/profile", "text": "我的" }
+    ]
+  }
+}

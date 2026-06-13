@@ -1,0 +1,39 @@
+/**
+ * Sunset Coral 落日珊瑚 — 情侣厨房 Mini-App 色彩主题
+ *
+ * 使用方式：
+ *   <style lang="scss"> 中直接使用 $fk-* 变量
+ *   内联 style 使用 CSS 变量 var(--fk-*)
+ */
+
+// ── Primary ──────────────────────────────────────────────
+$fk-primary:          #E07A5F;
+$fk-primary-dark:     #C4624A;
+$fk-primary-light:    #F0A08C;
+$fk-primary-lighter:  #FFF0EB;
+
+// ── Text ─────────────────────────────────────────────────
+$fk-text:             #2E2926;
+$fk-text-secondary:   #6B6560;
+$fk-text-muted:       #8E8580;
+$fk-text-placeholder: #B5AEA8;
+$fk-text-disabled:    #D5CEC8;
+
+// ── Background ───────────────────────────────────────────
+$fk-bg-page:          #FAF8F6;
+$fk-bg-white:         #FFFFFF;
+$fk-bg-hover:         #F5F0EC;
+
+// ── Border ───────────────────────────────────────────────
+$fk-border:           #EDE5E1;
+$fk-border-light:     #F5F0EC;
+
+// ── Status ───────────────────────────────────────────────
+$fk-success:          #6B9E78;
+$fk-warning:          #D4A55A;
+$fk-error:            #C75B5B;
+$fk-info:             #6B8FA8;
+
+// ── Misc ─────────────────────────────────────────────────
+$fk-avatar-bg:        #F0EBE7;
+$fk-star-off:         #D5CEC8;

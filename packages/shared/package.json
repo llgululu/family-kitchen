@@ -1,0 +1,26 @@
+{
+  "name": "@family-kitchen/shared",
+  "version": "0.1.0",
+  "private": true,
+  "description": "跨端共享：OpenAPI 生成类型、枚举、常量",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "gen:types": "openapi-typescript ./openapi.json -o ./src/api-types.generated.ts",
+    "lint": "eslint src --max-warnings 0",
+    "lint:fix": "eslint src --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"(no tests in shared package)\" && exit 0",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.4.1",
+    "typescript": "^5.6.2"
+  }
+}
